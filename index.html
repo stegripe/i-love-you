@@ -480,23 +480,23 @@
 
 <body onload="init()">
     <audio id="myAudio">
-        <source src="source/assets/music.mp3" type="audio/mpeg">
+        <source src="src/assets/music.mp3" type="audio/mpeg">
         Browser kamu tidak mendukung pemutaran audio.
     </audio>
     <audio id="myOpening">
-        <source src="source/assets/opening.mp3" type="audio/mpeg">
+        <source src="src/assets/opening.mp3" type="audio/mpeg">
         Browser kamu tidak mendukung pemutaran audio.
     </audio>
     <div class="preload">TUNGGU SEBENTAR</div>
     <div class="vidcont myoverlay">
         <div class="divvideo">
             <video id="myVideo" width="100%" height="100%">
-                <source src="source/assets/video.mp4" type="video/mp4">
+                <source src="src/assets/video.mp4" type="video/mp4">
                 Browser kamu tidak mendukung video HTML5.
             </video>
         </div>
     </div>
-    <img src="source/assets/wp2.png">
+    <img src="src/assets/wp2.png">
     <div class="container">
         <div class="myclock">
             <div class="myakun" id="nama">
@@ -907,9 +907,9 @@
                 else if (h > 9) tulis("siang", "selamat bekerja keras")
                 else if (h > 4) tulis("pagi", "selamat melakukan aktivitas harian");
                 else tulis("malam", "seharusnya kamu sudah tidur");
-                if (h > 18) document.querySelector("img").src = "source/assets/wp1.png";
-                else if (h > 4) document.querySelector("img").src = "source/assets/wp2.png";
-                else document.querySelector("img").src = "source/assets/wp1.png";
+                if (h > 18) document.querySelector("img").src = "src/assets/wp1.png";
+                else if (h > 4) document.querySelector("img").src = "src/assets/wp2.png";
+                else document.querySelector("img").src = "src/assets/wp1.png";
             }
             if (window.btoa($(".cc").text()) != "TWFkZSBXaXRoIOKdpO+4jw==") {
                 if (jalan) $(".container").remove();
